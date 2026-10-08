@@ -74,9 +74,25 @@ Stated up front, because a checker that oversells itself is the problem it claim
 
 ---
 
+## Terms, Privacy and Disclosure
+
+| | |
+|---|---|
+| **[TERMS_OF_USE.md](TERMS_OF_USE.md)** | What is shared and what is not. Documents are **CC BY-NC-SA 4.0** — quote them, cite them, apply the checks to your own reports. **The tool's source code is unpublished, proprietary, and held as a trade secret** |
+| **[PRIVACY_AND_DISCLOSURE.md](PRIVACY_AND_DISCLOSURE.md)** | This repository collects nothing. If you send me an EA it is **confidential by default and never named publicly**. Includes the conflict you are entitled to know about: **I trade my own EAs**, and what I commit to because of it |
+| **[CONTRIBUTING.md](CONTRIBUTING.md)** | Where to ask questions, and the **three things never to post in public** |
+
+**The boundary in one sentence:** checking your own EA with these published methods is the point;
+charging other people to do it is not.
+
+**Not financial advice.** Trading carries risk of loss. A clean verdict means *"not yet
+disqualified"* — nothing more.
+
 ## Author
 
-Gary Goodison. Findings and methodology are my own work and my own measurements, on my own
-accounts, unless a document says otherwise.
+Gary Goodison, trading as GMC EA VERIFIER. Findings and methodology are my own work and my own
+measurements, on my own accounts, unless a document says otherwise.
 
-No third party's EA is named anywhere in this repository.
+No third party's EA is named anywhere in this repository, and none will be.
+
+**Copyright © 2026 Gary Goodison. All rights reserved.**

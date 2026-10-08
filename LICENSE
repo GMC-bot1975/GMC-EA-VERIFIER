@@ -1,35 +1,55 @@
-Copyright (c) 2026 Gary Goodison. All rights reserved.
+Copyright (c) 2026 Gary Goodison, trading as GMC EA VERIFIER. All rights reserved.
 
-THE DOCUMENTATION IN THIS REPOSITORY
+See TERMS_OF_USE.md for the full terms. This file is the short version, and the two are intended to
+say the same thing. If they ever disagree, TERMS_OF_USE.md governs.
 
-The written documents here — the methodology, the check descriptions, the findings and the example
-report — are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+1. THE DOCUMENTATION IN THIS REPOSITORY
+
+The written documents here - the methodology, the check descriptions, the findings and the example
+report - are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International Licence (CC BY-NC-SA 4.0).
 
     https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-In plain terms, you may:
+You MAY:
 
-  - read it, quote it, and share it
-  - translate it, summarise it, or build on it
+  - read it, quote it, share it, and link to it
+  - reference the methodology with attribution to Gary Goodison and a link back here
+  - APPLY THE PUBLISHED CHECKS TO YOUR OWN REPORTS, for your own purposes. This is actively
+    encouraged, and the findings are written with the arithmetic so that you can
+  - translate or summarise it, releasing your version under these same terms
 
-provided that you:
+You MAY NOT:
 
-  - credit Gary Goodison and link back to this repository
-  - do not sell it or use it commercially without written permission
-  - release anything you build on it under the same terms
+  - sell this content or include it in a paid product or service
+  - build or operate a commercial or competing verification service on this material
+  - present this work, or conclusions drawn from it, as your own
 
-THE VERIFIER'S SOURCE CODE IS NOT IN THIS REPOSITORY AND IS NOT LICENSED HERE
+For any commercial use, ask. Written permission is required.
 
-The tool itself is unpublished and proprietary. Nothing in this licence grants any right to it.
+2. THE VERIFIER'S SOURCE CODE IS NOT IN THIS REPOSITORY
 
-THE MEASUREMENTS
+The tool is unpublished and proprietary, and is held as a trade secret. Nothing in this licence
+grants any right to it, and nothing in this repository discloses it.
+
+3. METHODS AND FORMULAE
+
+Stated plainly, because overclaiming would be worse than claiming nothing: copyright protects the
+expression of an idea, not the idea itself. Standard statistics - t = Sharpe x sqrt(years), a
+Bonferroni correction, a log-return Sharpe ratio - belong to nobody and are not claimed here.
+
+What is proprietary is the working system: how the checks are implemented, calibrated, sequenced,
+and defended against the failure modes documented in this repository.
+
+4. THE MEASUREMENTS
 
 Every figure in the findings is a measurement taken on my own accounts, with my own EAs, against my
 own broker. They are reported as what was measured, not as general truths, and the documents state
-their own limits. Your broker, your symbol and your account will differ. Check your own.
+their own limits. Your broker, symbol, account currency and platform build will differ. Check your
+own.
 
-NO WARRANTY
+5. NO WARRANTY, NO ADVICE
 
 The documentation is provided as is, without warranty of any kind. Nothing here is financial advice
-or a recommendation to trade. Trading carries risk of loss.
+or a recommendation to trade. Trading carries risk of loss. A clean verdict from this tool means
+"not yet disqualified" and nothing more - no backtest can prove an Expert Advisor works.
