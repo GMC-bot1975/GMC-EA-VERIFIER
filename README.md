@@ -90,9 +90,9 @@ disqualified"* — nothing more.
 
 ## Author
 
-Gary Goodison, trading as GMC EA VERIFIER. Findings and methodology are my own work and my own
+Grayson Goodison, trading as GMC EA VERIFIER. Findings and methodology are my own work and my own
 measurements, on my own accounts, unless a document says otherwise.
 
 No third party's EA is named anywhere in this repository, and none will be.
 
-**Copyright © 2026 Gary Goodison. All rights reserved.**
+**Copyright © 2026 Grayson Goodison. All rights reserved.**

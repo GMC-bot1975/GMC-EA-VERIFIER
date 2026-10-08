@@ -100,5 +100,5 @@ are visible and dated in the public commit log.
 
 ---
 
-**Copyright © 2026 Gary Goodison, trading as GMC EA VERIFIER.** See
+**Copyright © 2026 Grayson Goodison, trading as GMC EA VERIFIER.** See
 [TERMS_OF_USE.md](TERMS_OF_USE.md).

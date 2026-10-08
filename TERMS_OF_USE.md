@@ -26,7 +26,7 @@ VERIFIER — an independent verification tool for MetaTrader 5 Expert Advisors.
 
 ## 4. Intellectual Property
 
-Copyright in this repository's documents belongs to **Gary Goodison, trading as GMC EA VERIFIER**.
+Copyright in this repository's documents belongs to **Grayson Goodison, trading as GMC EA VERIFIER**.
 
 Two different things are protected in two different ways, and the distinction matters:
 
@@ -49,7 +49,7 @@ In plain terms:
 
 **You MAY:**
 - ✅ Read, quote, share and link to this repository
-- ✅ Reference the methodology with clear attribution to Gary Goodison and a link back here
+- ✅ Reference the methodology with clear attribution to Grayson Goodison and a link back here
 - ✅ **Apply the published checks to your own reports, for your own purposes** — this is actively
   encouraged, and the findings are written so you can
 - ✅ Translate or summarise it, releasing your version under the same terms
@@ -98,7 +98,7 @@ change is visible and dated.
 
 ---
 
-**Copyright © 2026 Gary Goodison, trading as GMC EA VERIFIER. All rights reserved.**
+**Copyright © 2026 Grayson Goodison, trading as GMC EA VERIFIER. All rights reserved.**
 
 Documents licensed under CC BY-NC-SA 4.0. The verifier's source code is not published and is not
 licensed under these terms.
