@@ -1,0 +1,70 @@
+# THIS IS A PUBLIC REPOSITORY. Everything committed here is permanent.
+#
+# Deleting a public repo later does NOT retrieve it - forks, caches and archives persist. So this
+# file is a deny-list written BEFORE any content, and the rule for this repo is:
+#
+#     NEVER run `git add .` here. Add named files only.
+#
+# The verifier's source code lives in a SEPARATE PRIVATE repository and must never appear here.
+
+# ---- the product. Never publish. ------------------------------------------------------------
+gmc_ea_verdict.py
+gmc_doctor.py
+gmc_*.py
+*.mq5
+*.ex5
+*.ex4
+
+# ---- account and money data -----------------------------------------------------------------
+track_record.jsonl
+*_report.htm
+*_report.html
+gmc_expected.json
+gmc_locks.json
+demo_daily_state.json
+manifest.json
+
+# ---- terminal and broker configuration ------------------------------------------------------
+*.chr
+*.set
+*.ini
+VPS_MIGRATE/
+
+# ---- internal operating documents -----------------------------------------------------------
+CLAUDE.md
+OPEN_DECISIONS.md
+HANDOVER_*.md
+DECISIONS_*.md
+MARKET_OPEN_CHECK.md
+PREREGISTRATION_*.md
+TEARDOWN_TARGETS.md
+AUDIT_*.md
+FINDING_*.md
+CORRECTION_*.md
+DESIGN_*.md
+PUBLISHING_RULES.md
+
+# ---- anything that looks like a credential --------------------------------------------------
+.mcp.json
+*token*
+*secret*
+*password*
+*.key
+*.pem
+.env
+.env.*
+
+# ---- logs, state, caches --------------------------------------------------------------------
+*.log
+*.jsonl
+*_state.json
+__pycache__/
+*.pyc
+rate_cache/
+test_results/
+market_data/
+
+# ---- OS noise -------------------------------------------------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
