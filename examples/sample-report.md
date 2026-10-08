@@ -169,11 +169,21 @@ Being straight about the limits of this example:
 | the **buy-and-hold +67.3%** | computed from my broker's own gold history and its live `swap_long` (4.997%/yr, derived at run time). Another broker's feed and swap rate will give a different figure |
 | the **tester's 4.57** | comes from the Strategy Tester report itself |
 
-**The fix for all three is to publish the two raw Strategy Tester reports**, which would make every
-number on this page checkable end to end. They contain **no account number and no email** — I have
-checked — only the demo server name. What they do contain is the EA's **full input list**, i.e. my
-strategy's settings.
+**✅ THE RAW REPORTS ARE NOW PUBLISHED, so all three are reproducible after all:**
 
-Given the EA failed, those settings are not worth protecting, so this is likely to happen. It is not
-done yet because publishing someone's strategy configuration is a one-way door, even when that
-someone is me.
+- **[be10new_IS_report.htm](be10new_IS_report.htm)** — the in-sample run, 2025.01.01 – 2026.08.21
+- **[be10new_OOS_report.htm](be10new_OOS_report.htm)** — the out-of-sample run
+
+**Download them and every figure on this page is checkable end to end**, including the
+per-position Sharpe (export the deals and group by position, not by deal) and the tester's own 4.57.
+
+They were scanned before publishing: **no account number, no email address, no credential** — only
+the demo server name. They **do** contain the EA's full input list, i.e. my strategy's settings.
+That is published deliberately: **the EA failed its own pre-registered bar, so the settings are not
+worth protecting, and being auditable is worth more than hiding a losing configuration.**
+
+**The one figure still not reproducible from these files alone is the buy-and-hold +67.3%**, because
+it is computed from my broker's own gold history and its live `swap_long` (4.997%/yr, derived at run
+time). Another broker's feed and swap rate will give a different number — which is the point of
+deriving it rather than storing it. See
+[finding 03](../docs/findings/03-financing-carry.md).

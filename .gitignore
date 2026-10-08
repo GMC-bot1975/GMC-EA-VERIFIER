@@ -19,6 +19,22 @@ gmc_*.py
 track_record.jsonl
 *_report.htm
 *_report.html
+
+# EXPLICIT, AUDITED EXCEPTION - added 2026-10-08, and deliberately NOT done with `git add -f`.
+# A forced add leaves no record of the decision; this line does.
+#
+# These two are MY OWN EA's Strategy Tester reports, published so that every figure in
+# examples/sample-report.md can be checked end to end instead of believed. Scanned before
+# staging: NO account number, NO email address, NO credential - only the demo server name.
+#
+# They DO contain the EA's full input list, i.e. my strategy's settings. That is accepted: the
+# EA failed its own pre-registered bar, so the settings are not worth protecting, and full
+# auditability is worth more than hiding a losing configuration.
+#
+# ANY OTHER REPORT STAYS BLOCKED. A client's report must never appear here under any
+# circumstances - see PRIVACY_AND_DISCLOSURE.md.
+!examples/be10new_IS_report.htm
+!examples/be10new_OOS_report.htm
 gmc_expected.json
 gmc_locks.json
 demo_daily_state.json
