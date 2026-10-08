@@ -1,0 +1,60 @@
+name: A number or claim here is wrong
+description: The most useful thing you can send. Two of the four findings in this repository are my own errors.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not post your account number, broker statement, password, or EA source code.**
+        This repository is public and its history is permanent. See
+        [CONTRIBUTING.md](https://github.com/GMC-bot1975/GMC-EA-VERIFIER/blob/main/CONTRIBUTING.md).
+
+        If you are right, the fix goes in and you are credited in `UPDATES.md`. The record of what
+        was got wrong stays in the repository — it is not quietly edited out.
+
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: The file, and the heading or table row.
+      placeholder: "docs/findings/01-sharpe-ratio.md, the two-window table"
+    validations:
+      required: true
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: What does it currently say?
+      description: Quote the figure or the sentence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What do you think it should say, and how did you get there?
+      description: >
+        The arithmetic, the source, or the measurement. This is the part that lets me act on it
+        rather than just discuss it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup, if it is relevant
+      description: >
+        Symbol, timeframe, date range, platform build, and whether the figures came from the
+        Strategy Tester or a live account. Several findings here behave differently depending on
+        window length, and one depends on the platform build. No account numbers.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have not included any account number, login, password, broker statement or EA source code
+          required: true

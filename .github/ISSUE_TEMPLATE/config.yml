@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask a question
+    url: https://github.com/GMC-bot1975/GMC-EA-VERIFIER/discussions
+    about: Questions about a check, a finding or the method go in Discussions.
+  - name: Read this first - what NOT to post
+    url: https://github.com/GMC-bot1975/GMC-EA-VERIFIER/blob/main/CONTRIBUTING.md
+    about: Never post an account number, a broker statement, a password or your EA source. This repository is public and permanent.
