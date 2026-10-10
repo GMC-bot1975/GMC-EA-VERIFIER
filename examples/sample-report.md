@@ -50,7 +50,7 @@ See [finding 01](../docs/findings/01-sharpe-ratio.md) for why these differ and w
 [OK  ] V1b bars     median 3600s matches H1; 96% of gaps exactly nominal; commonest
                     NON-nominal gap 7200s at 3%; bar density first-half vs second 1.00x
 [OK  ] V2 sample    385 trades
-[OK  ] V2 provable  t = 2.65 x sqrt(1.64) = 3.39  (bar 1.5, abandon below 1.0).
+[OK  ] V2 provable  t = 2.65 x sqrt(1.64) = 3.39  (against the declared bar).
                     1.64 years CANNOT prove a Sharpe below 1.17
 
   OOS : net 2 760.50   PF 1.29   Sharpe 1.70   trades 257

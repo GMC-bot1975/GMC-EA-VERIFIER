@@ -87,8 +87,8 @@ So three signals now, all enforced:
 | signal | threshold | what only it can see |
 |---|---|---|
 | median gap | must equal nominal | a wholly mislabelled series |
-| **share at nominal** | fail below 80% | **a minority of wrong bars** |
-| **density, first half vs second** | fail at 2.0× | **a regime change in the data — and it needs no assumption about trading calendars or holidays, because it compares the data only against itself** |
+| **share at nominal** | fails on a significant minority | **a minority of wrong bars** |
+| **density, first half vs second** | fails on a material imbalance | **a regime change in the data — and it needs no assumption about trading calendars or holidays, because it compares the data only against itself** |
 
 The output also names the defect now (`86400s at 23.2%`) rather than only failing.
 

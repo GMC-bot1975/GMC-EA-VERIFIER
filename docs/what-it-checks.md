@@ -29,8 +29,8 @@ because no single statistic sees every shape of this:
 | signal | catches |
 |---|---|
 | **median gap** vs nominal | a wholly mislabelled series |
-| **share of gaps at nominal** (fail below 80%) | **a minority of wrong bars, which the median cannot see** |
-| **bar density, first half of the window vs second** (fail at 2× or worse) | a regime change in the data — and it assumes nothing about trading calendars, because it compares the data only against itself |
+| **share of gaps at nominal** (fails when a significant minority are wrong) | **a minority of wrong bars, which the median cannot see** |
+| **bar density, first half of the window vs second** (fails on a material imbalance) | a regime change in the data — and it assumes nothing about trading calendars, because it compares the data only against itself |
 
 The second and third exist because of a real defect in this tool. It originally used the **median
 gap alone**, and a median is a *majority* statistic. A series that is 77% correct H4 and 23% daily
@@ -42,12 +42,12 @@ share-at-nominal figure was being computed and printed the whole time, and never
 
 Two parts.
 
-**Sample:** below 100 trades, it fails. That threshold is a **house rule, not a law** — 60 trades
+**Sample:** below a declared trade-count floor, it fails. That floor is a **house rule, not a law** — 60 trades
 at a per-trade Sharpe of 0.5 gives t = 3.87, which is comfortably significant. So the check now
 prints the per-trade Sharpe that *would* clear the bar on your sample, rather than dismissing a
 genuine low-frequency strategy.
 
-**Provability:** `t = Sharpe × √years`, against a bar of 1.5, abandon below 1.0. It also tells you
+**Provability:** `t = Sharpe × √years`, against a declared bar, with a lower level below which a candidate is abandoned. It also tells you
 the Sharpe your window is incapable of proving, whatever you do.
 
 ## V3 — In-sample vs out-of-sample
@@ -137,7 +137,7 @@ so while it happens.
 
 Numbers that cannot happen mean an error, not genius.
 
-A 2R target cannot produce a 5R average win. A profit factor above 3, or a win rate above 90%, is
+A 2R target cannot produce a 5R average win. An implausibly high profit factor, or an implausibly high win rate, is
 flagged for a look at look-ahead, a mislabelled timeframe, or fills at prices that never traded.
 
 These are warnings, not failures — occasionally they are real.
