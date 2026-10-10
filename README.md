@@ -4,8 +4,9 @@ An independent verification tool for MetaTrader 5 Expert Advisors.
 
 ## What It Does
 
-- **Reads source code** — not just backtest reports
+- **Reads your backtest report, trade history or live account** — and tells you what it actually proves
 - **Detects hidden martingale, overfitting, slippage fragility, and risk gaps**
+- **Structural review of your source code**, where you choose to provide it
 - **Hash-locked pre-registration** — results cannot be tampered with
 - **Plain English reports** — no jargon
 
@@ -46,7 +47,7 @@ the service.
 
 ## The number that matters most
 
-**12 EAs built. 10 failed their own pre-registered bar. Around 164 trials, 0 passes.**
+**45 strategies built. 56 pre-registered tests. Not one passed.**
 
 Every bar was written down and hash-locked *before* the test ran, so none of them could be moved
 afterwards.

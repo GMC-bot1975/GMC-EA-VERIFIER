@@ -94,7 +94,7 @@ balance minus deposits.
 
 ## 2026-09 — The research record
 
-**12 EAs built. 10 failed their own pre-registered bar. Around 164 trials, 0 passes.**
+**45 strategies built. 56 pre-registered tests. Not one passed.**
 
 Every bar hash-locked before the test ran. No false positive has ever been deployed, which is the
 only claim here worth anything.

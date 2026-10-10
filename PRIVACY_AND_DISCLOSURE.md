@@ -63,7 +63,7 @@ it turns out to be good, what stops me from simply trading it?*
   and say why** rather than take the fee.
 
 **And the honest context, which is the strongest assurance available:** my own research record is
-**12 EAs built, 10 failed their own pre-registered bar, around 164 trials, 0 passes.** The scarce
+**45 strategies built, 56 pre-registered tests, not one passed.** The scarce
 and valuable thing here is the *verification discipline*, not strategies — and the fastest way to
 destroy a verification business is to be caught taking a client's edge.
 
