@@ -45,6 +45,39 @@ the service.
 
 ---
 
+## What this does for you
+
+**Your EA looks great on paper. That's the problem.**
+
+A backtest is the best of everything you tried, measured on the data you tuned it against. It is
+built to look good. The question is what is left once that is stripped out — and that is the only
+question this answers.
+
+**Truth over backtests.**
+
+I will not tell you an EA is robust, because no backtest can show that. What I will tell you is what
+your evidence is actually worth: whether the data is real, whether the sample is big enough to mean
+anything, whether it survives the half it was never fitted to, whether it beats simply holding the
+instrument, and whether the edge is bigger than the cost of trading it.
+
+**Hidden curve fitting is the thing that costs people money**, and it rarely looks like a mistake. A
+strategy fitted to its own history produces a confident, smooth, entirely convincing equity curve.
+The checks here are built to separate that from an edge — out-of-sample consistency, correction for
+how many configurations were tried, and whether a handful of trades carry the whole result.
+
+**Don't guess — verify.**
+
+Eleven checks on your backtest report, your trade history or your live account. One page, plain
+English, no jargon, and the figures shown so you can check the arithmetic yourself. Where you
+choose to send the source code, I will read it for the things a report cannot show: unbounded
+exposure, no stop, or a strategy that quietly depends on something it should not.
+
+**Your capital deserves evidence, not promises** — including from me. Which is why the criteria are
+hash-locked before each test runs, so no result can be moved afterwards, and why every one of my own
+failures is published on this page rather than quietly deleted.
+
+---
+
 ## The number that matters most
 
 **45 strategies built. 56 pre-registered tests. Not one passed.**
