@@ -10,7 +10,7 @@ VERIFIER — an independent verification tool for MetaTrader 5 Expert Advisors.
 ## 2. What Is Shared
 
 - ✅ General methodology and verification principles
-- ✅ What each of the eleven checks tests, and why it exists
+- ✅ What each of the fifteen checks tests, and why it exists
 - ✅ Public findings, example reports, and educational content
 - ✅ Project updates and roadmap
 - ✅ **The arithmetic behind every published figure, so it can be checked rather than believed**

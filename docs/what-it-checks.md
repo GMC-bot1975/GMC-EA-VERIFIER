@@ -1,4 +1,4 @@
-# THE ELEVEN CHECKS
+# THE FIFTEEN CHECKS
 
 **Every one of these was written because this project got it wrong first.** The scars are named so
 nobody has to relearn them.
@@ -83,6 +83,28 @@ declared trial count.
 If only one trial is declared, the report says plainly that the number is wrong if more were tried
 and discarded.
 
+## V5a - Probabilistic Sharpe
+
+The probability the TRUE Sharpe beats zero, given how few trades there are and how lopsided their
+distribution is. A Sharpe computed from 200 skewed, fat-tailed results is not the same evidence as
+the same Sharpe from 2,000 well-behaved ones, and the raw figure does not know the difference.
+
+Per-observation, never annualised. Bailey & Lopez de Prado.
+
+## V5b - Deflated Sharpe
+
+Does the edge survive having been PICKED as the best of many attempts?
+
+The bar is raised to the expected best of N no-edge trials. An edge that is really "we tried sixty
+configurations and published the winner" fails here even when the raw figures look conclusive.
+The published worked example is stark: a winner of 56 variants showed a 98.5% probabilistic
+Sharpe and only 90.6% once selection was priced in - a failure at the 95% level.
+
+**It reports NOT EVALUABLE unless the author supplies the Sharpe of every configuration tried.**
+The arithmetic needs the variance across trials, and one report contains one Sharpe. **It is never
+estimated.** A guessed variance would produce a confident-looking number that is really a
+statement about the guess.
+
 ## V6 — Drawdown against return
 
 Return over maximum drawdown, compared against buy-and-hold on **the same symbol over the same
@@ -141,6 +163,24 @@ A 2R target cannot produce a 5R average win. An implausibly high profit factor, 
 flagged for a look at look-ahead, a mislabelled timeframe, or fills at prices that never traded.
 
 These are warnings, not failures — occasionally they are real.
+
+---
+
+## V12 - Declared halt threshold
+
+If an author states a drawdown at which the system stops trading, that figure is tested against
+the system's own history.
+
+**A halt the backtest already breached is not a safeguard.** If the declared threshold is at or
+below the drawdown the test itself produced, it would have fired during the very run being used
+as evidence.
+
+**A threshold that was never declared is reported NOT EVALUABLE - it is never guessed from the
+input list.** Comparing a result against a guessed threshold is the exact defect this check
+exists to find.
+
+**And passing it proves only that the number is consistent.** It does not verify that any halt is
+actually implemented in the code. Nothing in a backtest report can show that.
 
 ---
 

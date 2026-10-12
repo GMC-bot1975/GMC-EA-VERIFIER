@@ -39,7 +39,7 @@ the service.
 | | |
 |---|---|
 | **[docs/methodology.md](docs/methodology.md)** | The standard. Pre-registration, hash-locking, and why a result that was not declared in advance is worth less |
-| **[docs/what-it-checks.md](docs/what-it-checks.md)** | All eleven checks in plain English, and the real failure each one was written after |
+| **[docs/what-it-checks.md](docs/what-it-checks.md)** | All fifteen checks in plain English, and the real failure each one was written after |
 | **[docs/findings/](docs/findings/)** | Four things found in ordinary MT5 backtests that the reports do not tell you |
 | **[examples/sample-report.md](examples/sample-report.md)** | A full verdict on one of my own EAs. It failed |
 
@@ -67,7 +67,7 @@ how many configurations were tried, and whether a handful of trades carry the wh
 
 **Don't guess — verify.**
 
-Eleven checks on your backtest report, your trade history or your live account. One page, plain
+Fifteen checks on your backtest report, your trade history or your live account. One page, plain
 English, no jargon, and the figures shown so you can check the arithmetic yourself. Where you
 choose to send the source code, I will read it for the things a report cannot show: unbounded
 exposure, no stop, or a strategy that quietly depends on something it should not.
@@ -80,7 +80,7 @@ failures is published on this page rather than quietly deleted.
 
 ## The number that matters most
 
-**45 strategies built. 56 pre-registered tests. Not one passed.**
+**44 strategies built. 62 pre-registered tests. Not one passed.**
 
 Every bar was written down and hash-locked *before* the test ran, so none of them could be moved
 afterwards.

@@ -7,6 +7,46 @@ had already said.** An update log that only contains progress is marketing.
 
 ---
 
+## 2026-10-12 - Three published numbers were wrong. Here is the audit.
+
+**This page and the README carried claims that could not be substantiated.** Found by checking
+them rather than by anyone complaining.
+
+| claim as published | what it actually is |
+|---|---|
+| "eleven checks" | **fifteen** - V1, V1b, V2, V3, V4, V5, V5a, V5b, V6, V7, V8, V9, V10, V11, V12 |
+| "45 strategies built" | **44**, now produced by a script rather than asserted |
+| "56 pre-registered tests" | **62** |
+| "12 EAs built, 10 failed their own bar" *(repo description)* | **withdrawn** - unsupported |
+| "~164 trials" *(internal briefs)* | **withdrawn** - cannot be produced from the files |
+
+**How "12 built, 10 failed" fell over.** A script was written specifically to check it. Of 56
+registrations it found only **5** carrying a clean FAIL verdict line - 25 mixed, 17 with no
+verdict line, 9 empty. **The claim did not survive its own audit**, so it is gone rather than
+restated.
+
+**Where 44 comes from, so it can be checked.** `count_strategies.py` states its definition before
+counting: a file counts as a strategy if it can OPEN a position; controls that only close or
+modify do not count; skeletons and templates do not count; versions of one strategy collapse to
+one. 82 source files, 69 that can open a position, **44 distinct strategies.**
+
+**The first run of that script said 49, and it was wrong.** Its version-stripping turned
+`BreakL1` into "BreakL" and `BreakoutH4` into "BreakoutH" - treating meaningful digits as version
+numbers - and it counted skeletons and diagnostic builds as separate strategies. Caught by
+reading the output before publishing the figure. **That is the only reason 49 is not on this
+page.**
+
+**Three checks were running but undocumented.** V5a and V5b (probabilistic and deflated Sharpe,
+added the same day) and V12 (declared halt threshold) existed in the tool and were absent from
+`docs/what-it-checks.md`. Now documented.
+
+**The rule going forward:** a number does not go on a public page unless a script in the
+repository can produce it from the files. `count_strategies.py` for strategies,
+`count_verdicts.py` for verdicts, the assessment register for third-party results. **If a figure
+cannot be produced that way it is withdrawn, not rounded.**
+
+---
+
 ## 2026-10 — Forward test running on a third-party EA
 
 A dedicated terminal and a dedicated demo account now carry **one publicly available EA, written by
@@ -94,7 +134,7 @@ balance minus deposits.
 
 ## 2026-09 — The research record
 
-**45 strategies built. 56 pre-registered tests. Not one passed.**
+**44 strategies built. 62 pre-registered tests. Not one passed.**
 
 Every bar hash-locked before the test ran. No false positive has ever been deployed, which is the
 only claim here worth anything.
