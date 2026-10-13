@@ -72,8 +72,8 @@ Did it beat simply buying the instrument and sitting on it?
 It is computed automatically from the report's own symbol and window **so it cannot be skipped**,
 with financing derived live from the broker per symbol rather than hardcoded.
 
-An investor asks this first, and if the answer is no there is no answer to it. Around 164 trials
-here, and the survivor still lost to buy-and-hold.
+An investor asks this first, and if the answer is no there is no answer to it. Across every
+trial run here, the survivor still lost to buy-and-hold.
 
 ## V5 — Multiplicity
 
