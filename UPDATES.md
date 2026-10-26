@@ -7,6 +7,37 @@ had already said.** An update log that only contains progress is marketing.
 
 ---
 
+## 2026-10-26 - The counts were re-derived, and all 102 third-party findings are published
+
+**Every counted figure on a public page in this repository was regenerated from the registers
+rather than edited by hand.** Three of them moved.
+
+| claim as published | counted on 2026-10-26 |
+|---|---|
+| "24 third-party systems assessed" *(repo description)* | **102**, across **142** assessment runs |
+| "44 strategies built" | **52** |
+| "62 pre-registered tests" | **91** hash-locked pre-registrations, counted as files |
+
+**Why "pre-registered tests" became "hash-locked pre-registrations".** The old phrase counted
+something that was never defined the same way twice, and three different values for it appear in
+my own working notes. What can be counted without ambiguity is the registration documents: 91 of
+them, each hash-locked before its test ran. A 92nd lock exists whose registration document is not
+on disk; it is excluded rather than claimed, and it is being chased.
+
+**Of the 102, not one cleared every check** - 69 not viable as presented, 28 incomplete, 5 not
+evaluable on the market tested, 0 cleared. The four verdict states include *could not be checked*,
+which is a result and not a gap.
+
+**The full findings are now published.** One page per system, all 102, in
+[reports/](reports/). Every figure in it is measured from that system's own report. **No system,
+author, vendor, storefront or listing is named anywhere in it**, and the thresholds each verdict
+was drawn against are not published either - a reader learns what was asked and what was found.
+
+**Two internal filenames were removed from the 2026-10-12 entry below.** They belonged to the
+verification tool, whose source is unpublished and held as a trade secret. The claims they
+supported are unchanged and still reproducible from the files in this repository.
+
+---
 ## 2026-10-12 - Three published numbers were wrong. Here is the audit.
 
 **This page and the README carried claims that could not be substantiated.** Found by checking
@@ -25,7 +56,7 @@ registrations it found only **5** carrying a clean FAIL verdict line - 25 mixed,
 verdict line, 9 empty. **The claim did not survive its own audit**, so it is gone rather than
 restated.
 
-**Where 44 comes from, so it can be checked.** `count_strategies.py` states its definition before
+**Where 44 comes from, so it can be checked.** The counting script states its definition before
 counting: a file counts as a strategy if it can OPEN a position; controls that only close or
 modify do not count; skeletons and templates do not count; versions of one strategy collapse to
 one. 82 source files, 69 that can open a position, **44 distinct strategies.**
@@ -41,8 +72,8 @@ added the same day) and V12 (declared halt threshold) existed in the tool and we
 `docs/what-it-checks.md`. Now documented.
 
 **The rule going forward:** a number does not go on a public page unless a script in the
-repository can produce it from the files. `count_strategies.py` for strategies,
-`count_verdicts.py` for verdicts, the assessment register for third-party results. **If a figure
+repository can produce it from the files: a counting script for strategies, another
+for verdicts, the assessment register for third-party results. **If a figure
 cannot be produced that way it is withdrawn, not rounded.**
 
 ---
@@ -135,6 +166,10 @@ balance minus deposits.
 ## 2026-09 — The research record
 
 **44 strategies built. 62 pre-registered tests. Not one passed.**
+
+*(Those were the counts in September 2026. The current counts are 52 and 91 - see the
+2026-10-26 entry at the top of this file. The figure is left as published, because this
+file records what was said on the day it was said.)*
 
 Every bar hash-locked before the test ran. No false positive has ever been deployed, which is the
 only claim here worth anything.

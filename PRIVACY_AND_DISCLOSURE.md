@@ -63,7 +63,7 @@ it turns out to be good, what stops me from simply trading it?*
   and say why** rather than take the fee.
 
 **And the honest context, which is the strongest assurance available:** my own research record is
-**44 strategies built, 62 pre-registered tests, not one passed.** The scarce
+**52 strategies built, 91 hash-locked pre-registrations, not one passed.** The scarce
 and valuable thing here is the *verification discipline*, not strategies — and the fastest way to
 destroy a verification business is to be caught taking a client's edge.
 

@@ -42,6 +42,7 @@ the service.
 | **[docs/what-it-checks.md](docs/what-it-checks.md)** | All fifteen checks in plain English, and the real failure each one was written after |
 | **[docs/findings/](docs/findings/)** | Four things found in ordinary MT5 backtests that the reports do not tell you |
 | **[examples/sample-report.md](examples/sample-report.md)** | A full verdict on one of my own EAs. It failed |
+| **[reports/](reports/)** | **All 102 third-party findings, 40 pages.** One entry per system, no system named |
 
 ---
 
@@ -80,7 +81,9 @@ failures is published on this page rather than quietly deleted.
 
 ## The number that matters most
 
-**44 strategies built. 62 pre-registered tests. Not one passed.**
+**52 strategies built. 91 hash-locked pre-registrations. Not one passed.**
+
+**102 third-party systems assessed across 142 runs. Not one cleared every check.**
 
 Every bar was written down and hash-locked *before* the test ran, so none of them could be moved
 afterwards.

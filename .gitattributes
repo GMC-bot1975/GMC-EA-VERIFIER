@@ -1,0 +1,12 @@
+# core.autocrlf is true in this clone. Git's own binary detection has protected the published
+# PDF so far, but detection is a heuristic and a corrupted published report would be permanent
+# in a public repo. These lines make it a rule instead of a guess.
+
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.zip  binary
+
+# The Strategy Tester writes UTF-16 HTML. Never touch the line endings or git will mangle it.
+*.htm  -text
+*.html -text
